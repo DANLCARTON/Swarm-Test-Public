@@ -19,9 +19,9 @@ import cl_utils as u
 def dbConnect():
     # Comment/uncomment below for cloud access
     # !!! Insert your own DB URL below to instantiate your client !!!
-    client = MongoClient('mongodb+srv://gaetan:dbgaetan@cluster0.vgzoi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
-    db = client['tweet-database']
-    collection = db['tweetsswarm'] #tweetsfr ou tweetsswarm
+    # client = MongoClient('mongodb+srv://gaetan:dbgaetan@cluster0.vgzoi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+    # db = client['tweet-database']
+    # collection = db['tweetsswarm'] #tweetsfr ou tweetsswarm
 
     # Comment/uncomment below for local acces
     # client = MongoClient('localhost', 27017)
