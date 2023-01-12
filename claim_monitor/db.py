@@ -13,10 +13,11 @@ from pymongo import MongoClient, collection
 import datetime
 import pprint
 import cl_utils as u
+import db_info as dbi
 
 # Connection to the database
 
-def dbConnect():
+def dbConnect():    
     # Comment/uncomment below for cloud access
     # !!! Insert your own DB URL below to instantiate your client !!!
     # client = MongoClient('mongodb+srv://gaetan:dbgaetan@cluster0.vgzoi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
@@ -27,6 +28,8 @@ def dbConnect():
     # client = MongoClient('localhost', 27017)
     # db = client["localtweetdb"]  
     # collection = db["tweets"]
+
+    client, db, collection = dbi.getDB()
 
     return db, collection
 
