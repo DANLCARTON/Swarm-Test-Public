@@ -21,13 +21,16 @@ from datetime import datetime
 import time
 import os
 import ml_upd_db as upd
+import bt_info as bti
 
 # To set your environment variables in your terminal run the following line:
 # export 'BEARER_TOKEN'='MYTOKENFROMTWITTERDEVELOPPERACCOUNT'
 
 # !!! Sensitive data !!!
 # Replace with you own token from Twitter developper account
-#   BEARER_TOKEN ='AAAAAAAAAAAAAAAAAAAAAMiwjQEAAAAA2za%2F1B4tWYq6lxRDPJx%2FeSg4ndI%3D61iEU1HWPWULywOkrAU3YWlIKrdrlpv8LUaCdPSw3uaN0wBj8R'
+#   BEARER_TOKEN ='AAAAAAAAAAAAAAAAAAAAAMiwjQEAAAAA2za%2F1B4tWYq6lxRDPJx%2FeSg4ndI%3D61iEU1HWPWULywOkrAU3YWlIKrdrlpv8LUaCdPSw3uaN0wBj8R
+
+BEARER_TOKEN = bti.getBT()
 
 loopTime = 120 # Main loop/update (default 240)
 i = 0
