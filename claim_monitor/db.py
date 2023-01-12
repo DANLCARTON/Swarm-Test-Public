@@ -31,7 +31,11 @@ def dbConnect():
 
     client, db, collection = dbi.getDB()
 
-    return db, collection
+    CLIENT = MongoClient(client)
+    DB = CLIENT[db]
+    COLLECTION = DB[collection]
+
+    return DB, COLLECTION
 
 def post(id, author, text, date):
     # Function that takes as argument the id, author, text and date of a tweet and adds it to the database.
