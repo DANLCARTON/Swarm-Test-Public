@@ -40,7 +40,6 @@ def create_url(author,nbtweets,date):
     url = "https://api.twitter.com/2/tweets/search/recent?query={}&{}&start_time={}&max_results={}".format( ###### <---- LA REQUETE
         query,tweet_fields,date,nbtweets
     )
-    print("url = " + url + "\n")
     return url  
 
 def create_headers(bearer_token):
