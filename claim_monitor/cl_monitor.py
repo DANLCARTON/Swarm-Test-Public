@@ -28,7 +28,6 @@ BEARER_TOKEN = bti.getBT()
 loopTime = 120 # Main loop/update (default 240)
 i = 0
 n = 896
-pathToJson = "collections/collection-"
 
 # Returns up to nbtweets tweets written by author since date 
 # ----------------------------------------------------------------------
@@ -99,15 +98,9 @@ while(True):
     
     upd.updateDB()
 
-    if i%2 == 0:
-        u.mongoToJson(n, pathToJson+"1.json")
-        print("collection-1")
-    else:
-        u.mongoToJson(n, pathToJson+"2.json")
-        print("collection-2")
-
     nbNewTweets = 0
     nbTweetsAdd = 0
     i += 1
 
+    print ("The search for tweets will automatically restart in two minutes.........")
     time.sleep(loopTime)

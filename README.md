@@ -1,4 +1,6 @@
-![installation detail](media/ccm.jpg)
+# Use case
+
+This github repository was made as part of the "Swarm" project. it was made by adapting the [Critical Climate Machine](https://github.com/robillardstudio/c-climate-public) original project for a [Google Colab](https://colab.research.google.com/drive/1qCxkZgalXdvOvgNcPTMnh6LFQKVEPDaX#scrollTo=LDfuDK88e7Gt). It is supposed to be used only in this Google Colab. 
 
 Critical Climate Machine
 ========================
@@ -71,7 +73,19 @@ For every cycle of the scenario (cf Scenario), each unit receives and classifies
 
 Warning: the text below is clearly identified in the realm of cognitive sciences as known misleading claims about climate change. It should be recalled here that **97% of climate experts agree humans are causing global warming** (Cook et al., 2016).
 
-![code sheet](media/labels-caption.png)
+|                                                 |                                      |
+|:------------------------------------------------|:-------------------------------------|
+| `-.` none                                       | `9.` sensitivity is low              |
+| `1.` ice isn't melting                          | `10.` there is no species impact     |
+| `2.` we are heading into ice age                | `11.` co2 is not a polluant          |
+| `3.` weather is cold                            | `12.` policies are harmful           |
+| `4.` there is a hiatus in warming               | `13.` policies are ineffective       |
+| `5.` sea level rise is exaggerated              | `14.` clean energy won't work        |
+| `6.` extremes aren't increasing                 | `15.` we need energy                 |
+| `7.` it's natural cycles                        | `16.` science is unreliable          |
+| `8.` there is no evidence for greenhouse effect | `17.` climate movement is unreliable |
+
+*contrarian claims labels. machine learning model: logistic regression.*
 
 `server.launch` runs `server.py` at unit startup. `server.py` receives data and instructions from the main device over wifi network.
 
@@ -142,8 +156,6 @@ MediaFutures
 Critical Climate Machine is part of the MediaFutures project. It has received funding from the European Union’s framework Horizon 2020 for
 research and innovation programme under grant agreement No 951962.
 
-![logos](media/logos-mediafutures-eu.png)
-
 The Intelligent Museum
 ----------------------
 
@@ -152,5 +164,3 @@ An artistic-curatorial field of experimentation for deep learning and visitor pa
 The [ZKM | Center for Art and Media](https://zkm.de/en) and the [Deutsches Museum Nuremberg](https://www.deutsches-museum.de/en/nuernberg/information/) cooperate with the goal of implementing an AI-supported exhibition. Together with researchers and international artists, new AI-based works of art will be realized during the next four years (2020-2023). They will be embedded in the AI-supported exhibition in both houses. The Project „The Intelligent Museum” is funded by the Digital Culture Programme of the [Kulturstiftung des Bundes](https://www.kulturstiftung-des-bundes.de/en) (German Federal Cultural Foundation) and funded by the [Beauftragte der Bundesregierung für Kultur und Medien](https://www.bundesregierung.de/breg-de/bundesregierung/staatsministerin-fuer-kultur-und-medien) (Federal Government Commissioner for Culture and the Media).
 
 As part of the project, digital curating will be critically examined using various approaches of digital art. Experimenting with new digital aesthetics and forms of expression enables new museum experiences and thus new ways of museum communication and visitor participation. The museum is transformed to a place of experience and critical exchange.
-
-![Logo](media/Logo_ZKM_DMN_KSB.png)
