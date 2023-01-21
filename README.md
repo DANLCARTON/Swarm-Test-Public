@@ -1,6 +1,6 @@
 # Use case
 
-This github repository was made as part of the "Swarm" project. it was made by adapting the [Critical Climate Machine](https://github.com/robillardstudio/c-climate-public) original project for a [Google Colab](https://colab.research.google.com/drive/1qCxkZgalXdvOvgNcPTMnh6LFQKVEPDaX#scrollTo=LDfuDK88e7Gt). It is supposed to be used only in this Google Colab. 
+This github repository was made as part of the "Swarm" project. it was made by adapting the [Critical Climate Machine](https://github.com/robillardstudio/c-climate-public) original project for a [Google Colab](https://colab.research.google.com/drive/1mGMklYbJd3eStzYrZwxiBLnqHG-ObzUp#scrollTo=DUYp4twyll5a). It is supposed to be used only in this Google Colab. 
 
 Critical Climate Machine
 ========================
